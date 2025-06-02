@@ -21,6 +21,7 @@ st.sidebar.title("Input document")
 input_method = st.sidebar.radio(
     "Choose an input method:",
     ["Upload txt", "Input text", "Input URL"],  # Added URL option
+    index=2  # Make "Input URL" the default option
 )
 
 # Case 1: User chooses to upload a .txt file
