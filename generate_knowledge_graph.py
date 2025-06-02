@@ -79,7 +79,7 @@ def visualize_graph(graph_documents):
     # Add valid edges to the graph
     for rel in valid_edges:
         try:
-            net.add_edge(rel.source.id, rel.target.id, label=rel.type.lower())
+            net.add_edge(rel.source.id, rel.target.id, label=rel.type.lower().replace('_', ' '))
         except:
             continue  # Skip edge if error occurs
 
